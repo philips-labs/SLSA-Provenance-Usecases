@@ -1,0 +1,39 @@
+{
+  "_type": "https://in-toto.io/Statement/v0.1",
+  "subject": [
+    {
+      "name": "slsa-level-1-uc1:v0.1",
+      "digest": {
+        "sha256": "291bce7b6bcdf111caaf4745f75ed9ff25332b44f28558205bad23aa69816acc"
+      }
+    },
+    {
+      "name": "slsa-level-1-uc1:latest",
+      "digest": {
+        "sha256": "291bce7b6bcdf111caaf4745f75ed9ff25332b44f28558205bad23aa69816acc"
+      }
+    }
+  ],
+  "predicateType": "https://slsa.dev/provenance/v0.1",
+  "predicate": {
+    "builder": {
+      "id": "http://localhost"
+    },
+    "metadata": {
+      "buildStartedOn": "2021-09-16T08:38:00Z"
+    },
+    "recipe": {
+      "type": "Attestations/local",
+      "definedInMaterial": 0,
+      "entryPoint": "./slsa-level-1/usecase-1/build.sh"
+    },
+    "materials": [
+      {
+        "uri": "git+https://github.com/philips-labs/SLSA-Provenance-UseCases",
+        "digest": {
+          "sha1": "1918ad244ca2db2d14ab0669a2f1587504214cac"
+        }
+      }
+    ]
+  }
+}
